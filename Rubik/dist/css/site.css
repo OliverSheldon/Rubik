@@ -1,0 +1,136 @@
+#wrapper{
+    position: relative;
+    min-height: 100vh;
+}
+
+.cubeContainer{
+    /* position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    width: 100%;
+    z-index: -1; */
+    min-height: 300px;
+}
+
+.cube div{
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.square{
+    width: 50px;
+    height: 50px;
+    border: 2px solid black;
+    display: inline-block;
+    float: left;
+}
+
+.face{
+    width: inherit;
+    height: inherit;
+    position: absolute;
+}
+
+.cube{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    transform-style: preserve-3d;
+    transform: rotateX(-45deg) rotateY(-45deg) rotateZ(0deg) translateZ(45px);
+}
+
+.cube.exploded{
+    transform: none;
+    top: 150px;
+}
+
+.face_0{
+    transform: translateZ(75px);
+}
+
+.cube.exploded .face_0{
+    transform: translateZ(0);
+}
+
+.face_1{
+    /* Exploded */
+    /* transform: translateX(-100%); */
+    transform: rotateY(270deg) translateX(0px) translateZ(75px);
+}
+
+.cube.exploded .face_1{
+    transform: translateX(-100%);
+}
+
+.face_2{
+    /* Exploded */
+    /* transform: translateY(-100%); */
+    transform: rotateX(90deg) translateY(0px) translateZ(75px);
+}
+
+.cube.exploded .face_2{
+    transform: translateY(-100%);
+}
+
+.face_3{
+    /* Exploded */
+    /* transform: translateX(100%); */
+    transform: rotateY(90deg) translateX(0px) translateZ(75px);
+}
+
+.cube.exploded .face_3{
+    transform: translateX(100%);
+}
+
+.face_4{
+    /* Exploded */
+    /* transform: translateY(100%); */
+    transform: rotateX(270deg) rotateZ(0deg) translateY(0px) translateZ(75px);
+}
+
+.cube.exploded .face_4{
+    transform: translateY(100%);
+}
+
+.face_5{
+    /* Exploded */
+    /* transform: translateX(200%); */
+    transform: rotateY(180deg) translateX(0) translateZ(75px);
+}
+
+.cube.exploded .face_5{
+    transform: translateX(200%);
+}
+
+button{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.green{
+    background-color: green;
+    color: white;
+}
+
+.orange{
+    background-color: orange;
+}
+
+.white{
+    background-color: white;
+}
+
+.red{
+    background-color: red;
+}
+
+.yellow{
+    background-color: yellow;
+}
+
+.blue{
+    background-color: blue;
+    color: white;
+}

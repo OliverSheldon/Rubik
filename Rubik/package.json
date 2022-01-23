@@ -1,0 +1,20 @@
+{
+  "scripts": {
+    "compile:js": "browserify ./assets/scripts/index.js -o ./dist/scripts/index.js -t [ babelify --presets [ @babel/preset-env @babel/preset-react ] ]",
+    "build:js": "npm run compile:js",
+    "build": "npm run build:js",
+    "watch:js": "watchify ./assets/scripts/index.js -o ./dist/scripts/index.js -t [ babelify --presets [ @babel/preset-env @babel/preset-react ] ]",
+    "watch": "npm run watch:js"
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
+    "babelify": "^10.0.0",
+    "browserify": "^17.0.0",
+    "watchify": "^4.0.0"
+  }
+}
