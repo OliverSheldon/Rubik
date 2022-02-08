@@ -2,7 +2,9 @@
 Rubik's Cube - React
 
 run the following commands to install/build:
+
 npm install
+
 npm run-script build
 ______________________________________________
 
